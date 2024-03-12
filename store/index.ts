@@ -16,7 +16,7 @@ export const useExperienceStore = create<Store>()(() => ({
 	experienceList: [
 		{
 			id: "1",
-			date: "2021 - 2023",
+			date: "2021 — 2023",
 			title: "Lead Frontend Developer - Ari Company",
 			link: "https://ari.company/",
 			content:
@@ -24,7 +24,7 @@ export const useExperienceStore = create<Store>()(() => ({
 		},
 		{
 			id: "2",
-			date: "2021 - 2021",
+			date: "2021 — 2021",
 			title: "Frontend Developer - Zoiex Technologies",
 			link: "https://zoiex.com/",
 			content:
@@ -32,7 +32,7 @@ export const useExperienceStore = create<Store>()(() => ({
 		},
 		{
 			id: "3",
-			date: "2020 - 2021",
+			date: "2020 — 2021",
 			title: "Frontend Developer - Filancy Marketing",
 			link: "https://filancy.com/",
 			content:
@@ -40,7 +40,7 @@ export const useExperienceStore = create<Store>()(() => ({
 		},
 		{
 			id: "4",
-			date: "2018 - 2019",
+			date: "2018 — 2019",
 			title: "Web Developer - FluidWeb",
 			link: "https://fluidweb.io/",
 			content:

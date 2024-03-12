@@ -21,15 +21,15 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning={true}>
 			<body className={`${inter.className} bg-white dark:bg-black text-black dark:text-white`}>
-				<Providers attribute="class" defaultTheme="system" enableSystem>
-					<div className="container flex flex-row">
-						<div className="basis-2/4">
+				<Providers attribute="class" defaultTheme="light" enableSystem>
+					<div className="container px-8 md:px-18 xl:px-56 mx-auto flex flex-row">
+						<header className="basis-2/4 pr-16">
 							<ThemeSwitcher />
 							<Sidebar />
-						</div>
-						<div className="basis-2/4">
+						</header>
+						<main className="basis-2/4">
 							{children}
-						</div>
+						</main>
 					</div>
 				</Providers>
 			</body>
