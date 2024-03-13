@@ -1,4 +1,4 @@
-import { ThemeSwitcher } from "@/components/ThemeSwitcher"
+// import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 import Sidebar from "@/components/layouts/sidebar"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -24,7 +24,7 @@ export default function RootLayout({
 				<Providers attribute="class" defaultTheme="light" enableSystem>
 					<div className="container px-8 md:px-18 xl:px-56 mx-auto flex flex-row">
 						<header className="basis-2/4 pr-16">
-							<ThemeSwitcher />
+							{/* <ThemeSwitcher /> */}
 							<Sidebar />
 						</header>
 						<main className="basis-2/4">

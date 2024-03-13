@@ -13,6 +13,7 @@
 
 .experienceItem .title {
 	position: relative;
+	padding: 0 3px;
 	transition: ease-in 0.3s;
 }
 
