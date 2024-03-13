@@ -9,7 +9,7 @@ export default function Sidebar() {
 			<h3 className="text-xl font-bold mt-2">Frontend Engineer</h3>
 			<div className="mt-2 max-w-80">Brings ideas to life with code! I build pixel-perfect, engaging, and accessible digital experiences.</div>
 
-			<div className="pt-20 uppercase font-bold text-md">
+			<div className="pt-14 uppercase font-bold text-md">
 				<ul className={styles.sidebarMenu}>
 					<li><a href="">— About</a></li>
 					<li><a href="">— Experience</a></li>

@@ -22,10 +22,18 @@
 	content: "";
 	width: 16px;
 	height: 16px;
-	background: no-repeat url("/arrow-up-right.svg");
-	background-size: 16px 16px;
 	transform: translateY(3px);
 	transition: ease-in 0.3s;
+}
+
+.experienceItem .lightTitle::after {
+	background: no-repeat url("/arrow-up-right.svg");
+	background-size: 16px 16px;
+}
+
+.experienceItem .darkTitle::after {
+	background: no-repeat url("/arrow-up-right-white.svg");
+	background-size: 16px 16px;
 }
 
 .experienceItem:hover .title::after {
