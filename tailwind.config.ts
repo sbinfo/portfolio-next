@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { COLORS } from "./constants/colors.constants"
 
 const config: Config = {
 	content: [
@@ -8,6 +9,7 @@ const config: Config = {
 	],
 	darkMode: "class",
 	theme: {
+		colors: COLORS,
 		extend: {},
 	},
 	plugins: [],

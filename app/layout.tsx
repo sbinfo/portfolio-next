@@ -1,12 +1,13 @@
-// import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 import Sidebar from "@/components/layouts/sidebar"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Alegreya, Inter } from "next/font/google"
 import "./globals.css"
 import { Providers } from "./providers"
 
 
 const inter = Inter({ subsets: ["latin"] })
+const alegreya = Alegreya({ subsets: ["latin"] })
+// const oswald = PT_Sans({ weight: "400" | "700" })
 
 export const metadata: Metadata = {
 	title: "Said Babaiev",
@@ -20,16 +21,17 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning={true}>
-			<body className={`${inter.className} bg-white dark:bg-black text-black dark:text-white`}>
+			<body className={`${inter.className} bg-bg text-text`}>
 				<Providers attribute="class" defaultTheme="light" enableSystem>
-					<div className="container px-8 md:px-18 xl:px-56 mx-auto flex flex-row">
-						<header className="basis-2/4 pr-16">
-							{/* <ThemeSwitcher /> */}
-							<Sidebar />
-						</header>
-						<main className="basis-2/4">
-							{children}
-						</main>
+					<div>
+						<div className="container px-8 md:px-18 xl:px-56 mx-auto flex flex-row">
+							<header className="basis-2/4 pr-16">
+								<Sidebar />
+							</header>
+							<main className="basis-2/4">
+								{children}
+							</main>
+						</div>
 					</div>
 				</Providers>
 			</body>

@@ -15,8 +15,8 @@ export default function ExperienceList() {
 	})
 
 	return (
-		<>
+		<div>
 			{mappedExperienceList}
-		</>
+		</div>
 	)
 }

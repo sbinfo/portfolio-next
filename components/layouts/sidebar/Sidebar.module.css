@@ -3,15 +3,21 @@
 }
 
 .sidebarMenu li a {
+	@apply text-secondary;
 	position: relative;
 	padding-top: 10px;
 	padding-right: 2px;
 	padding-bottom: 10px;
 	padding-left: 2px;
+	transition: 0.5s ease-in-out;
+}
+
+.sidebarMenu li a:hover {
+	@apply text-heading;
 }
 
 .sidebarMenu li a::before {
-	background: hsl(45 100% 70%);
+	@apply bg-primary;
 	content: "";
 	inset: 0;
 	position: absolute;
