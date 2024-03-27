@@ -3,17 +3,22 @@
 	border-radius: 5px;
 	border: 1px solid transparent;
 	padding: 20px;
-	transition: ease-in 0.3s;
+	transition: ease-in 0.4s;
 	cursor: pointer;
 }
 
 .experienceItem:hover {
-	@apply border-primary;
+	@apply bg-bgSecondary border-secondary;
 }
 
 .experienceItem .title {
 	position: relative;
 	padding: 0 3px;
+	transition: ease-in 0.4s;
+}
+
+.experienceItem:hover .title {
+	@apply text-border;
 }
 
 .experienceItem .title::after {
@@ -22,16 +27,8 @@
 	width: 16px;
 	height: 16px;
 	transform: translateY(3px);
-	transition: ease-in 0.3s;
-}
-
-.experienceItem .lightTitle::after {
+	transition: ease-in 0.4s;
 	background: no-repeat url("/arrow-up-right-white.svg");
-	background-size: 16px 16px;
-}
-
-.experienceItem .darkTitle::after {
-	background: no-repeat url("/arrow-up-right.svg");
 	background-size: 16px 16px;
 }
 
@@ -40,7 +37,7 @@
 	transform: translateX(5px);
 }
 
-.experienceItem .title::before {
+/* .experienceItem .title::before {
 	@apply bg-primary;
 	content: "";
 	inset: 0;
@@ -49,7 +46,7 @@
 	transform-origin: right;
 	transition: transform 0.5s ease-in-out;
 	z-index: -1;
-}
+} */
 
 .experienceItem:hover .title::before {
 	transform: scaleX(1);

@@ -17,7 +17,7 @@
 }
 
 .sidebarMenu li a::before {
-	@apply bg-primary;
+	@apply bg-secondary;
 	content: "";
 	inset: 0;
 	position: absolute;

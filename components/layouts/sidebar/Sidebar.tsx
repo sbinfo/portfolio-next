@@ -1,3 +1,5 @@
+"use client"
+import Link from "next/link"
 import styles from "./Sidebar.module.css"
 
 export default function Sidebar() {
@@ -9,11 +11,14 @@ export default function Sidebar() {
 
 			<div className="pt-14 uppercase font-bold text-md">
 				<ul className={styles.sidebarMenu}>
-					<li><a href="#about">— About</a></li>
-					<li><a href="#experience">— Experience</a></li>
-					<li><a href="#projects">— Projects</a></li>
-					<li><a href="">— Feed</a></li>
-					<li><a href="">— Guestbook</a></li>
+
+					<li>
+						<Link href="#about">— About</Link>
+					</li>
+					<li><Link href="#experience">— Experience</Link></li>
+					<li><Link href="#about">— Projects</Link></li>
+					<li><Link href="#about">— Feed</Link></li>
+					<li><Link href="#about">— Guestbook</Link></li>
 				</ul>
 			</div>
 		</div>
